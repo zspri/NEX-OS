@@ -18,3 +18,5 @@ Download the executable from [here](https://github.com/Nanomotion/NEX-OS/tree/ma
 
  - `Shift + F3` - Enables/disables administrator account
  - `Ctrl + Alt + Minus` - Crashes NEX OS
+
+*Icons provided by [Icons8](https://icons8.com)*
