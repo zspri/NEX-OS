@@ -77,6 +77,30 @@ Namespace My
                 Me("Admin") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("https://google.com/search?q=")>  _
+        Public Property SearchUrl() As String
+            Get
+                Return CType(Me("SearchUrl"),String)
+            End Get
+            Set
+                Me("SearchUrl") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property UseNotesDarkTheme() As Boolean
+            Get
+                Return CType(Me("UseNotesDarkTheme"),Boolean)
+            End Get
+            Set
+                Me("UseNotesDarkTheme") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

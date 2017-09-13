@@ -32,6 +32,12 @@ Public Class Notes
     End Sub
 
     Private Sub Notes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If My.Settings.UseNotesDarkTheme Then
+            Me.ForeColor = Color.White
+            Me.BackColor = Color.FromArgb(255, 44, 47, 51)
+            TextBox1.ForeColor = Color.White
+            TextBox1.BackColor = Color.FromArgb(255, 44, 47, 51)
+        End If
         If EditMode Then
             OpenNote()
         End If
@@ -55,5 +61,13 @@ Public Class Notes
         End If
         Me.Close()
         EditMode = True
+    End Sub
+
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+        NotesSettings.Show()
+    End Sub
+
+    Private Sub Me_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+        Form2.ProcessKeys(e)
     End Sub
 End Class

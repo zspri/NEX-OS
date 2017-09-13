@@ -27,4 +27,8 @@
     Private Sub Internet_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         WebBrowser1.GoHome()
     End Sub
+
+    Private Sub Me_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+        Form2.ProcessKeys(e)
+    End Sub
 End Class

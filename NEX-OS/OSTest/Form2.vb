@@ -4,6 +4,22 @@
             Me.Refresh()
         Next
     End Function
+
+    Public Function ProcessKeys(e As KeyEventArgs)
+        If e.KeyCode = Keys.F3 And My.Computer.Keyboard.ShiftKeyDown Then
+            If My.Settings.Admin Then
+                My.Settings.Admin = False
+                AdminIcon.Hide()
+            Else
+                My.Settings.Admin = True
+                AdminIcon.Show()
+            End If
+        ElseIf e.KeyCode = Keys.OemMinus And My.Computer.Keyboard.AltKeyDown And My.Computer.Keyboard.CtrlKeyDown Then
+            FatalError.Show()
+        ElseIf e.KeyCode = Keys.S And My.Computer.Keyboard.AltKeyDown Then
+            DeskMenu.Show()
+        End If
+    End Function
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AdminIcon.Hide()
         Form1.Close()
@@ -34,8 +50,9 @@
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        Internet.Show()
-        Internet.WebBrowser1.GoSearch()
+        DeskMenu.Show()
+        'Internet.Show()
+        'Internet.WebBrowser1.GoSearch()
     End Sub
 
     Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
@@ -51,17 +68,7 @@
         ModalBox.Close()
     End Sub
 
-    Private Sub Form2_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
-        If e.KeyCode = Keys.F3 And My.Computer.Keyboard.ShiftKeyDown Then
-            If My.Settings.Admin Then
-                My.Settings.Admin = False
-                AdminIcon.Hide()
-            Else
-                My.Settings.Admin = True
-                AdminIcon.Show()
-            End If
-        ElseIf e.KeyCode = Keys.OemMinus And My.Computer.Keyboard.altKeyDown And My.Computer.Keyboard.CtrlKeyDown Then
-            FatalError.Show()
-        End If
+    Private Sub Me_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+        ProcessKeys(e)
     End Sub
 End Class

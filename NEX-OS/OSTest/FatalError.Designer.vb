@@ -55,10 +55,10 @@ Partial Class FatalError
         Me.Stacktrace.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Stacktrace.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.Stacktrace.Location = New System.Drawing.Point(12, 67)
+        Me.Stacktrace.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.Stacktrace.Location = New System.Drawing.Point(12, 110)
         Me.Stacktrace.Name = "Stacktrace"
-        Me.Stacktrace.Size = New System.Drawing.Size(892, 507)
+        Me.Stacktrace.Size = New System.Drawing.Size(892, 464)
         Me.Stacktrace.TabIndex = 2
         '
         'FatalError

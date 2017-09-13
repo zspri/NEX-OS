@@ -30,7 +30,7 @@ Public Class Files
             AddHandler label.Click, AddressOf Me.Files_Click
             label.Show()
             label.Visible = True
-            label.BringToFront()
+            label.SendToBack()
             DirFiles.Add(label)
             labelY += 25
         Next
@@ -73,14 +73,18 @@ Public Class Files
                 ModalBox.Close()
                 RetrieveFilesIn(My.Computer.FileSystem.SpecialDirectories.MyDocuments)
             Catch ex As Exception
-                ModalBox.ShowModal("An Error Occurred", "An unexpected error occurred while fetching directory contents." & vbCrLf & vbCrLf & ex.ToString, YesNoModal:=False)
-                ModalBox.Close()
-                RetrieveFilesIn(My.Computer.FileSystem.SpecialDirectories.MyDocuments)
+                FatalError.Show()
+                FatalError.Stacktrace.Text = ex.ToString
+                Me.Close()
             End Try
         End If
     End Sub
 
     Private Sub DirPath_Click(sender As Object, e As EventArgs) Handles DirPath.Click
         TextBox1.Show()
+    End Sub
+
+    Private Sub Me_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+        Form2.ProcessKeys(e)
     End Sub
 End Class

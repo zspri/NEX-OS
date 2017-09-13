@@ -8,5 +8,11 @@
     <Setting Name="Admin" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
+    <Setting Name="SearchUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://google.com/search?q=</Value>
+    </Setting>
+    <Setting Name="UseNotesDarkTheme" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

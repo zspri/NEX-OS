@@ -27,12 +27,42 @@ OSTest
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:OSTest.My.Resources.Resources.BatteryCharging">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSTest.My.Resources.Resources.BatteryFull">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSTest.My.Resources.Resources.BatteryHigh">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSTest.My.Resources.Resources.BatteryLow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSTest.My.Resources.Resources.BatteryMed">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:OSTest.My.Resources.Resources.error_1">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:OSTest.My.Resources.Resources.error_2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSTest.My.Resources.Resources.NoBattery">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

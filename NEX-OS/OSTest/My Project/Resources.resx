@@ -121,11 +121,29 @@
   <data name="access_denied" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-No Entry-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BatteryCharging" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Charging Battery-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BatteryFull" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Full Battery-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BatteryHigh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Charged Battery-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BatteryLow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Low Battery-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BatteryMed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Battery Level-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="error_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-Cancel-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="error_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-Error-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NoBattery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Remove Battery-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="warning_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-Attention-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

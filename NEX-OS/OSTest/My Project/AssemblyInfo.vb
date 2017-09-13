@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("OSTest")>
+<Assembly: AssemblyTitle("Nex-OS")>
 <Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("Hewlett-Packard")>
-<Assembly: AssemblyProduct("OSTest")>
-<Assembly: AssemblyCopyright("Copyright © Hewlett-Packard 2017")>
+<Assembly: AssemblyCompany("Nanomotion")>
+<Assembly: AssemblyProduct("Nex-OS")>
+<Assembly: AssemblyCopyright("Copyright © Nanomotion 2017")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: AssemblyVersion("1.1.0.47")>
+<Assembly: AssemblyFileVersion("1.1.0.47")>
