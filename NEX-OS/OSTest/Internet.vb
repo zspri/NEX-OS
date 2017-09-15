@@ -31,4 +31,18 @@
     Private Sub Me_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         Form2.ProcessKeys(e)
     End Sub
+
+    Private Sub TextBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyDown
+        If e.KeyCode = Keys.Return Or e.KeyCode = Keys.Enter Then
+            WebBrowser1.Navigate(TextBox1.Text)
+        End If
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        WebBrowser1.GoBack()
+    End Sub
+
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+        WebBrowser1.GoForward()
+    End Sub
 End Class

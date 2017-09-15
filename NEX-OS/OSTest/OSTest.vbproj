@@ -122,6 +122,12 @@
     <Compile Include="Form2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GetHelp.Designer.vb">
+      <DependentUpon>GetHelp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GetHelp.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Internet.Designer.vb">
       <DependentUpon>Internet.vb</DependentUpon>
     </Compile>
@@ -189,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetHelp.resx">
+      <DependentUpon>GetHelp.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Internet.resx">
       <DependentUpon>Internet.vb</DependentUpon>

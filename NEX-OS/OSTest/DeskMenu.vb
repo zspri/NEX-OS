@@ -1,8 +1,21 @@
 ﻿Imports System.IO
 Imports System.Text
 Imports System.Net
+Imports System.Management
+Imports System.Runtime.InteropServices
+Imports System.Net.NetworkInformation
 
 Public Class DeskMenu
+    Private Function GetNetworkName()
+        Dim ni As NetworkInterface() = NetworkInterface.GetAllNetworkInterfaces()
+        If ni Is Nothing OrElse ni.Length < 1 Then
+            Throw New WebException("No internet connection detected.")
+        End If
+        For Each adapter As NetworkInterface In ni
+            Return adapter.Name
+        Next
+    End Function
+
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
         Me.Close()
     End Sub
@@ -65,7 +78,7 @@ Public Class DeskMenu
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        Internet.Show()
-        Internet.WebBrowser1.Navigate("https://github.com/Nanomotion/NEX-OS/issues")
+        GetHelp.Show()
+        Me.Close()
     End Sub
 End Class

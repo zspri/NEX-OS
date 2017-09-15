@@ -37,3 +37,4 @@ C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\OSTest.pdb
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\OSTest.MenuSettings.resources
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\OSTest.NotesSettings.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\OSTest.GetHelp.resources
