@@ -1,8 +1,15 @@
-﻿Public Class Form2
+﻿Imports System.IO
+Imports System.Net
+Imports System.Management
+Imports System.Runtime.InteropServices
+Imports System.Net.NetworkInformation
+
+Public Class Form2
     Private Function SpamRefresh(times As Integer)
         For tmp = 0 To times
             Me.Refresh()
         Next
+        Return 0
     End Function
 
     Public Function ProcessKeys(e As KeyEventArgs)
@@ -19,10 +26,20 @@
         ElseIf e.KeyCode = Keys.S And My.Computer.Keyboard.AltKeyDown Then
             DeskMenu.Show()
         End If
+        Return 0
     End Function
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AdminIcon.Hide()
         Form1.Close()
+        Me.Cursor.Show()
+        VersionLabel.Text = "NEX OS Version " + My.Application.Info.Version.ToString
+        Try
+            Dim Client As WebClient = New WebClient()
+            Dim Reader As StreamReader = New StreamReader(Client.OpenRead("http://nanomotion.xyz/api/index"))
+        Catch ex As Exception
+            NoInternet.Show()
+            NoInternet.MoreInfo.Text = ex.ToString
+        End Try
     End Sub
 
     Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
@@ -51,8 +68,6 @@
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         DeskMenu.Show()
-        'Internet.Show()
-        'Internet.WebBrowser1.GoSearch()
     End Sub
 
     Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click

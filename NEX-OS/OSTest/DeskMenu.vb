@@ -14,14 +14,20 @@ Public Class DeskMenu
         For Each adapter As NetworkInterface In ni
             Return adapter.Name
         Next
+        Return 0
     End Function
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+        For tmp = 0 To 390 / 10
+            Me.Width = Me.Width - 10
+            Application.DoEvents()
+        Next
         Me.Close()
     End Sub
 
     Private Sub DeskMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Height = My.Computer.Screen.Bounds.Size.Height
+        Me.Width = 0
         Me.Location = New Point(0, 0)
         Me.Show()
         Application.DoEvents()
@@ -61,6 +67,28 @@ Public Class DeskMenu
             News.Text = "Failed to fetch news. Try again later."
             Debug.Print(ex.ToString)
         End Try
+        ' Slide open animation
+        ' ref: max 390
+        For tmp = 0 To 190 / 10
+            Me.Width = Me.Width + 10
+            Application.DoEvents()
+        Next
+        For tmp = 0 To 80 / 10
+            Me.Width = Me.Width + 7.5
+            Application.DoEvents()
+        Next
+        For tmp = 0 To 60 / 10
+            Me.Width = Me.Width + 5
+            Application.DoEvents()
+        Next
+        For tmp = 0 To 40
+            Me.Width = Me.Width + 2.5
+            Application.DoEvents()
+        Next
+        For tmp = 0 To 20
+            Me.Width = Me.Width + 1
+            Application.DoEvents()
+        Next
     End Sub
 
     Private Sub TextBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyDown

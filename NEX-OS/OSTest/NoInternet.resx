@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAABClJREFUeF7t
+        nOuN1TAQhW8JlEAJlEAH0AF0AB1AB9ABdAAdQAfQAXQAHcB80lqKrsaOk/gxyZ5POj/Yvdex59jjV5ab
+        EEIIIYQQQgghhBBCCCFEBZ8eJCZA4P89SCYMZhl8mTAYL/hJMmEAn01e8JNkwgBGmvDM9Mb0wfTN9Mu0
+        fBb/5ueI574yPTVdnp4mvDDx/T8mr+waYQxlYOBlaW0Cvfe+h7fQDxNlPzFdjhYm9Ar8vXjGc9Pl2GsC
+        uZrc7X2np76YLjdPbDXhpelIjj8qnk0dLkWtCe9M3u9z+mn6aCJ9oOXESk/mZwSTz/BZr4ycWGFdijUT
+        anP9b9Nr055UwWTLdynDK/teWxcL4VkzoaQU+FYwMmpGhUwwvTf1grK9Zy7V0vgQ1Jrw1zRiQmTu4Fle
+        HZIe3cTMamTkkpD5oZSSqM/lNmxrJozOv2smsE84DQxZtvprvSaiCaV0dIpUROpIm6kzmsCc4NUDsVwO
+        z31Az2hCaXUUelVE7/cqfUYTchs2zqnC8tbkVRrVnMFHMoGe7tUBhb1P+G7yKkxga4lkQm5VxBzHSOBG
+        jnOjkUvmIqQar8Jbe0wUE0oj+l4sU7m1mwanj17F0B4imJCb00qiEw5NUUyuDEWvMkl7iWDC1qPsJGLS
+        HYKfSztLHbnym21CzYFdTswTa6u/3dQGHx0xAGaaUEqtNapZgm+mNvispY8GPzHbhOVKhxzPsQS3bTUX
+        PM33DjzYe1BS6wuURIQ5wYO2rh1pN7vXWBuSBKlb3jOimkCbv5q8OiU1yQal+1uCM4KoJkCpbodTUWl7
+        Pir4icgmlEbCoVGQm3jJ+T3TTo6oJhCL3OSMObso7QpnHtFGNaGULXZ11ty5CE7PJqoJuVGwq8PmGsmS
+        NAIRTcgt16nrZnJHzZHuSaOZQGy8ehDLzXgFoRmTb4lIJrBj9urAYmYzXkEoIpFM8J6PNuMVgqISxQTv
+        2WgzuXPxsPejxmwTcilo18rxDJOwx0wTmk7Cue11lGVoiVkmNF2G5nZ2p3hbzJhhQu7gctdGjOWmVxia
+        eRSxhZEmND+KgFwawulo+4EcI0wgFun92Hvtyv+J3KSCzvT6dm8TiIVXLjp8KZNbDaFek1kPepnA97zy
+        UJODy7UrSdx/jOmINpd6PmpyJQlrl/LMCfxXA2eghQm0NZfzk5r/sWEpFSVhBG+I8c7klXbMtIU20bbc
+        UnMpThGaw5Db+9reaK314p5todxuKZmCa0ZCBM0wgdh0C/6StTkhikaa0Dznr8EMf4bR0NsEYtBstbMH
+        Nmtrb4jNVg8TaPPUwN9DIzgPoWL0itb59ahamMDSkzbyWdGJ3scWogKZEACZEACZEACZEACZEACZEACZ
+        EACZEACZEICSCfxODMAzQcEfzNIEBX8SBF7BF0IIIYQQ5+B2+w91N11lWPyN5gAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>NEX OS performs better when online
+
+Here's what you can try:
+• Check that your network cables are plugged in.
+• Make sure you’re not in airplane mode.
+• See if your wireless switch is turned on.
+• Restart your router.
+</value>
+  </data>
+</root>

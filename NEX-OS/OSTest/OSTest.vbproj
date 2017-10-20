@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8013D95E-7383-4CF0-B87F-2CFA7A584F6D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>OSTest.My.MyApplication</StartupObject>
-    <RootNamespace>OSTest</RootNamespace>
-    <AssemblyName>OSTest</AssemblyName>
+    <StartupObject>NEXOS.My.MyApplication</StartupObject>
+    <RootNamespace>NEXOS</RootNamespace>
+    <AssemblyName>NEX OS</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -36,7 +36,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>OSTest.xml</DocumentationFile>
+    <DocumentationFile>NEX OS.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -46,7 +46,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>OSTest.xml</DocumentationFile>
+    <DocumentationFile>NEX OS.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -65,6 +65,9 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ManagedWifi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\managedwifi.1.1.0\lib\net20\ManagedWifi.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -155,6 +158,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NoInternet.Designer.vb">
+      <DependentUpon>NoInternet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NoInternet.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Notes.Designer.vb">
       <DependentUpon>Notes.vb</DependentUpon>
     </Compile>
@@ -211,6 +220,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="NoInternet.resx">
+      <DependentUpon>NoInternet.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Notes.resx">
       <DependentUpon>Notes.vb</DependentUpon>
     </EmbeddedResource>
@@ -240,6 +252,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Resources\icons8-Attention-96.png" />
   </ItemGroup>
   <ItemGroup>

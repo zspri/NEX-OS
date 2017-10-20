@@ -2,72 +2,72 @@
 <doc>
 <assembly>
 <name>
-OSTest
+NEX OS
 </name>
 </assembly>
 <members>
-<member name="T:OSTest.My.Resources.Resources">
+<member name="T:NEXOS.My.Resources.Resources">
 <summary>
   A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
 </member>
-<member name="P:OSTest.My.Resources.Resources.ResourceManager">
+<member name="P:NEXOS.My.Resources.Resources.ResourceManager">
 <summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
 </member>
-<member name="P:OSTest.My.Resources.Resources.Culture">
+<member name="P:NEXOS.My.Resources.Resources.Culture">
 <summary>
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="P:OSTest.My.Resources.Resources.access_denied">
+<member name="P:NEXOS.My.Resources.Resources.access_denied">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:OSTest.My.Resources.Resources.BatteryCharging">
+<member name="P:NEXOS.My.Resources.Resources.BatteryCharging">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:OSTest.My.Resources.Resources.BatteryFull">
+<member name="P:NEXOS.My.Resources.Resources.BatteryFull">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:OSTest.My.Resources.Resources.BatteryHigh">
+<member name="P:NEXOS.My.Resources.Resources.BatteryHigh">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:OSTest.My.Resources.Resources.BatteryLow">
+<member name="P:NEXOS.My.Resources.Resources.BatteryLow">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:OSTest.My.Resources.Resources.BatteryMed">
+<member name="P:NEXOS.My.Resources.Resources.BatteryMed">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:OSTest.My.Resources.Resources.error_1">
+<member name="P:NEXOS.My.Resources.Resources.error_1">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:OSTest.My.Resources.Resources.error_2">
+<member name="P:NEXOS.My.Resources.Resources.error_2">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:OSTest.My.Resources.Resources.NoBattery">
+<member name="P:NEXOS.My.Resources.Resources.NoBattery">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:OSTest.My.Resources.Resources.warning_1">
+<member name="P:NEXOS.My.Resources.Resources.warning_1">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

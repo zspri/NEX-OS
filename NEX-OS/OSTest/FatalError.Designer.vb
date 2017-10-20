@@ -42,7 +42,7 @@ Partial Class FatalError
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.OSTest.My.Resources.Resources.error_2
+        Me.PictureBox1.Image = Global.NEXOS.My.Resources.Resources.error_2
         Me.PictureBox1.Location = New System.Drawing.Point(12, 9)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(37, 37)
