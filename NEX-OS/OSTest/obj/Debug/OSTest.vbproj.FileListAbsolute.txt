@@ -16,13 +16,10 @@ c:\users\zspri\documents\visual studio 2017\Projects\OSTest\OSTest\obj\Debug\OST
 c:\users\zspri\documents\visual studio 2017\Projects\OSTest\OSTest\obj\Debug\OSTest.ModalBox.resources
 c:\users\zspri\documents\visual studio 2017\Projects\OSTest\OSTest\obj\Debug\OSTest.Files.resources
 c:\users\zspri\documents\visual studio 2017\Projects\OSTest\OSTest\obj\Debug\OSTest.FatalError.resources
-C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\OSTest.vbprojResolveAssemblyReference.cache
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\OSTest.vbproj.GenerateResource.Cache
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.DeskMenu.resources
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.FatalError.resources
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.Files.resources
-C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.Form1.resources
-C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.Form2.resources
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.GetHelp.resources
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.Internet.resources
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.MenuSettings.resources
@@ -40,3 +37,11 @@ C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEX OS.pdb
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.NoInternet.resources
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\bin\Debug\ManagedWifi.dll
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.StartSplash.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.Desktop.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.LoginForm.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.InfoDisplay.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\bin\Debug\Newtonsoft.Json.xml
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\OSTest.vbprojResolveAssemblyReference.cache
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.Paint.resources

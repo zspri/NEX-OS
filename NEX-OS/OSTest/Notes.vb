@@ -34,7 +34,7 @@ Public Class Notes
     Private Sub Notes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If My.Settings.UseNotesDarkTheme Then
             Me.ForeColor = Color.White
-            Me.BackColor = Color.FromArgb(255, 44, 47, 51)
+            Me.BackColor = Color.FromArgb(255, 30, 34, 37)
             TextBox1.ForeColor = Color.White
             TextBox1.BackColor = Color.FromArgb(255, 44, 47, 51)
         End If
@@ -43,7 +43,7 @@ Public Class Notes
         End If
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles Label2.Click
         If EditMode Then
             My.Settings.Save()
         Else
@@ -68,6 +68,6 @@ Public Class Notes
     End Sub
 
     Private Sub Me_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
-        Form2.ProcessKeys(e)
+        Desktop.ProcessKeys(e)
     End Sub
 End Class

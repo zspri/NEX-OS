@@ -61,7 +61,7 @@ Partial Class NoInternet
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(150, 229)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(435, 208)
+        Me.Label2.Size = New System.Drawing.Size(576, 208)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = resources.GetString("Label2.Text")
         '
@@ -90,7 +90,7 @@ Partial Class NoInternet
         '
         'MoreInfo
         '
-        Me.MoreInfo.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.MoreInfo.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.MoreInfo.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.MoreInfo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.MoreInfo.Location = New System.Drawing.Point(151, 498)

@@ -26,9 +26,9 @@ Public Class DeskMenu
     End Sub
 
     Private Sub DeskMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.Height = My.Computer.Screen.Bounds.Size.Height
+        Me.Height = My.Computer.Screen.Bounds.Size.Height - 35
         Me.Width = 0
-        Me.Location = New Point(0, 0)
+        Me.Location = New Point(64, 35)
         Me.Show()
         Application.DoEvents()
         TimeLabel.Text = "Today is " + MonthName(Month(DateTime.Now)) + " " + DateTime.Now.ToString("dd") + "."
@@ -69,20 +69,16 @@ Public Class DeskMenu
         End Try
         ' Slide open animation
         ' ref: max 390
-        For tmp = 0 To 190 / 10
-            Me.Width = Me.Width + 10
-            Application.DoEvents()
-        Next
-        For tmp = 0 To 80 / 10
+        For tmp = 0 To 270 / 7.5
             Me.Width = Me.Width + 7.5
             Application.DoEvents()
         Next
-        For tmp = 0 To 60 / 10
-            Me.Width = Me.Width + 5
+        For tmp = 0 To 60 / 4
+            Me.Width = Me.Width + 4
             Application.DoEvents()
         Next
-        For tmp = 0 To 40
-            Me.Width = Me.Width + 2.5
+        For tmp = 0 To 40 / 2
+            Me.Width = Me.Width + 2
             Application.DoEvents()
         Next
         For tmp = 0 To 20
@@ -100,13 +96,44 @@ Public Class DeskMenu
         End If
     End Sub
 
-    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+    Private Sub MenuSettings_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
         MenuSettings.Show()
         Me.Close()
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+    Private Sub HelpIcon_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         GetHelp.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Browser_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click, Label6.Click
+        Internet.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Notes_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click, Label5.Click
+        Notes.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Files_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click, Label7.Click
+        Files.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Settings_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click, Label8.Click
+        Settings.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Time_Click(sender As Object, e As EventArgs) Handles TimeLabel.Click, PictureBox2.Click
+        My.Forms.Internet.Show()
+        My.Forms.Internet.WebBrowser1.Navigate(My.Settings.SearchUrl + "what time is it")
+        Me.Close()
+    End Sub
+
+    Private Sub Paint_Click(sender As Object, e As EventArgs) Handles Label9.Click, PictureBox9.Click
+        My.Forms.Paint.Show()
         Me.Close()
     End Sub
 End Class

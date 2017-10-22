@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form2
+Partial Class Desktop
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,104 +22,73 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Desktop))
+        Me.DeskBar = New System.Windows.Forms.Panel()
         Me.AdminIcon = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.VersionLabel = New System.Windows.Forms.Label()
-        Me.Panel1.SuspendLayout()
+        Me.DeskBarTop = New System.Windows.Forms.Panel()
+        Me.TimeLabel = New System.Windows.Forms.Label()
+        Me.NEXTitle = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.DeskBar.SuspendLayout()
         CType(Me.AdminIcon, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.DeskBarTop.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Panel1
+        'DeskBar
         '
-        Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.DeskBar.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel1.Controls.Add(Me.AdminIcon)
-        Me.Panel1.Controls.Add(Me.PictureBox7)
-        Me.Panel1.Controls.Add(Me.PictureBox6)
-        Me.Panel1.Controls.Add(Me.PictureBox5)
-        Me.Panel1.Controls.Add(Me.PictureBox4)
-        Me.Panel1.Controls.Add(Me.PictureBox3)
-        Me.Panel1.Controls.Add(Me.PictureBox2)
-        Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Location = New System.Drawing.Point(0, -2)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(72, 565)
-        Me.Panel1.TabIndex = 0
+        Me.DeskBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.DeskBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DeskBar.Controls.Add(Me.AdminIcon)
+        Me.DeskBar.Controls.Add(Me.PictureBox5)
+        Me.DeskBar.Controls.Add(Me.PictureBox3)
+        Me.DeskBar.Controls.Add(Me.PictureBox2)
+        Me.DeskBar.Controls.Add(Me.PictureBox1)
+        Me.DeskBar.Location = New System.Drawing.Point(-1, 33)
+        Me.DeskBar.Name = "DeskBar"
+        Me.DeskBar.Size = New System.Drawing.Size(66, 530)
+        Me.DeskBar.TabIndex = 0
         '
         'AdminIcon
         '
-        Me.AdminIcon.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.AdminIcon.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.AdminIcon.Image = CType(resources.GetObject("AdminIcon.Image"), System.Drawing.Image)
-        Me.AdminIcon.Location = New System.Drawing.Point(8, 407)
+        Me.AdminIcon.Location = New System.Drawing.Point(8, 372)
         Me.AdminIcon.Name = "AdminIcon"
-        Me.AdminIcon.Size = New System.Drawing.Size(56, 50)
+        Me.AdminIcon.Size = New System.Drawing.Size(50, 50)
         Me.AdminIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.AdminIcon.TabIndex = 7
         Me.AdminIcon.TabStop = False
         '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(8, 207)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(56, 50)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox7.TabIndex = 6
-        Me.PictureBox7.TabStop = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(8, 151)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(56, 50)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox6.TabIndex = 5
-        Me.PictureBox6.TabStop = False
-        '
         'PictureBox5
         '
-        Me.PictureBox5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(8, 463)
+        Me.PictureBox5.Location = New System.Drawing.Point(8, 428)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(56, 50)
+        Me.PictureBox5.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox5.TabIndex = 4
         Me.PictureBox5.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(8, 95)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(56, 50)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox4.TabIndex = 3
-        Me.PictureBox4.TabStop = False
         '
         'PictureBox3
         '
         Me.PictureBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(37, 519)
+        Me.PictureBox3.Location = New System.Drawing.Point(31, 484)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -130,7 +99,7 @@ Partial Class Form2
         '
         Me.PictureBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(1, 519)
+        Me.PictureBox2.Location = New System.Drawing.Point(1, 484)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -139,10 +108,12 @@ Partial Class Form2
         '
         'PictureBox1
         '
+        Me.PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(8, 11)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(56, 50)
+        Me.PictureBox1.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -157,10 +128,53 @@ Partial Class Form2
         Me.VersionLabel.Name = "VersionLabel"
         Me.VersionLabel.Size = New System.Drawing.Size(751, 19)
         Me.VersionLabel.TabIndex = 1
-        Me.VersionLabel.Text = "NEX OS"
+        Me.VersionLabel.Text = "NEX OS Public Build 0.0.0.0"
         Me.VersionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Form2
+        'DeskBarTop
+        '
+        Me.DeskBarTop.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DeskBarTop.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(37, Byte), Integer))
+        Me.DeskBarTop.Controls.Add(Me.TimeLabel)
+        Me.DeskBarTop.Controls.Add(Me.NEXTitle)
+        Me.DeskBarTop.Location = New System.Drawing.Point(0, -2)
+        Me.DeskBarTop.Name = "DeskBarTop"
+        Me.DeskBarTop.Size = New System.Drawing.Size(845, 38)
+        Me.DeskBarTop.TabIndex = 2
+        '
+        'TimeLabel
+        '
+        Me.TimeLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TimeLabel.BackColor = System.Drawing.Color.Transparent
+        Me.TimeLabel.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.TimeLabel.ForeColor = System.Drawing.Color.White
+        Me.TimeLabel.Location = New System.Drawing.Point(632, 3)
+        Me.TimeLabel.Name = "TimeLabel"
+        Me.TimeLabel.Size = New System.Drawing.Size(210, 32)
+        Me.TimeLabel.TabIndex = 4
+        Me.TimeLabel.Text = "January 01, 1969 12:00 AM"
+        Me.TimeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'NEXTitle
+        '
+        Me.NEXTitle.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.NEXTitle.BackColor = System.Drawing.Color.Transparent
+        Me.NEXTitle.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.NEXTitle.ForeColor = System.Drawing.Color.White
+        Me.NEXTitle.Location = New System.Drawing.Point(4, 3)
+        Me.NEXTitle.Name = "NEXTitle"
+        Me.NEXTitle.Size = New System.Drawing.Size(80, 32)
+        Me.NEXTitle.TabIndex = 3
+        Me.NEXTitle.Text = "NEX OS"
+        Me.NEXTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Timer1
+        '
+        '
+        'Desktop
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -168,34 +182,33 @@ Partial Class Form2
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(841, 557)
+        Me.Controls.Add(Me.DeskBarTop)
         Me.Controls.Add(Me.VersionLabel)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.DeskBar)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Form2"
-        Me.Text = "Form2"
+        Me.Name = "Desktop"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.Panel1.ResumeLayout(False)
+        Me.DeskBar.ResumeLayout(False)
         CType(Me.AdminIcon, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.DeskBarTop.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents DeskBar As Panel
     Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents VersionLabel As Label
-    Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents AdminIcon As PictureBox
+    Friend WithEvents DeskBarTop As Panel
+    Friend WithEvents NEXTitle As Label
+    Friend WithEvents TimeLabel As Label
+    Friend WithEvents Timer1 As Timer
 End Class

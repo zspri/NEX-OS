@@ -68,6 +68,9 @@
     <Reference Include="ManagedWifi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\managedwifi.1.1.0\lib\net20\ManagedWifi.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -112,17 +115,35 @@
     <Compile Include="Files.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="InfoDisplay.Designer.vb">
+      <DependentUpon>InfoDisplay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InfoDisplay.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <Compile Include="Paint.Designer.vb">
+      <DependentUpon>Paint.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form2.vb">
+    <Compile Include="Paint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartSplash.Designer.vb">
+      <DependentUpon>StartSplash.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desktop.Designer.vb">
+      <DependentUpon>Desktop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Desktop.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GetHelp.Designer.vb">
@@ -199,11 +220,20 @@
     <EmbeddedResource Include="Files.resx">
       <DependentUpon>Files.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="InfoDisplay.resx">
+      <DependentUpon>InfoDisplay.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paint.resx">
+      <DependentUpon>Paint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartSplash.resx">
+      <DependentUpon>StartSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desktop.resx">
+      <DependentUpon>Desktop.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GetHelp.resx">
       <DependentUpon>GetHelp.vb</DependentUpon>

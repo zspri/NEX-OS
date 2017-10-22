@@ -4,7 +4,7 @@ Imports System.Management
 Imports System.Runtime.InteropServices
 Imports System.Net.NetworkInformation
 
-Public Class Form2
+Public Class Desktop
     Private Function SpamRefresh(times As Integer)
         For tmp = 0 To times
             Me.Refresh()
@@ -28,14 +28,15 @@ Public Class Form2
         End If
         Return 0
     End Function
-    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Desktop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AdminIcon.Hide()
-        Form1.Close()
-        Me.Cursor.Show()
-        VersionLabel.Text = "NEX OS Version " + My.Application.Info.Version.ToString
+        Timer1.Interval = 1
+        Timer1.Enabled = True
+        Timer1.Interval = 1000
+        VersionLabel.Text = "NEX OS Public Build " + My.Application.Info.Version.ToString
         Try
             Dim Client As WebClient = New WebClient()
-            Dim Reader As StreamReader = New StreamReader(Client.OpenRead("http://nanomotion.xyz/api/index"))
+            Dim Reader As StreamReader = New StreamReader(Client.OpenRead("https://httpbin.org/get"))
         Catch ex As Exception
             NoInternet.Show()
             NoInternet.MoreInfo.Text = ex.ToString
@@ -46,7 +47,7 @@ Public Class Form2
         Settings.Show()
     End Sub
 
-    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs)
         Internet.Show()
     End Sub
 
@@ -56,25 +57,28 @@ Public Class Form2
         ModalBox.Close()
         Debug.Print("Modal finished // " & modalResult.ToString)
         If modalResult = 1 Then
+            Try
+                DeskMenu.Close()
+            Catch ex As Exception
+                Debug.Print(ex.ToString)
+            End Try
             Me.Close()
         End If
     End Sub
 
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
-        Form1.Show()
-        SpamRefresh(1000)
-        Form1.Close()
+        LoginForm.Show()
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         DeskMenu.Show()
     End Sub
 
-    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
+    Private Sub PictureBox6_Click(sender As Object, e As EventArgs)
         Notes.Show()
     End Sub
 
-    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
+    Private Sub PictureBox7_Click(sender As Object, e As EventArgs)
         Files.Show()
     End Sub
 
@@ -85,5 +89,18 @@ Public Class Form2
 
     Private Sub Me_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         ProcessKeys(e)
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Dim Time As String
+        If Date.Now.Hour < 12 Then
+            Time = Date.Now.ToString("HH:mm") & " AM"
+        ElseIf Date.Today.Hour = 12 Then
+            Time = Date.Now.ToString("12:mm") & " PM"
+        Else
+            Dim format = Date.Now.Hour - 12
+            Time = format.ToString & Date.Now.ToString(":mm") & " PM"
+        End If
+        TimeLabel.Text = MonthName(Month(DateTime.Now)) & Date.Now.ToString(" dd, yyyy ") & Time
     End Sub
 End Class

@@ -34,6 +34,22 @@ Partial Class DeskMenu
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.News = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.BtIcon = New System.Windows.Forms.PictureBox()
@@ -43,6 +59,16 @@ Partial Class DeskMenu
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
+        Me.Panel6.SuspendLayout()
+        Me.Panel5.SuspendLayout()
+        Me.Panel7.SuspendLayout()
+        Me.Panel8.SuspendLayout()
+        Me.Panel9.SuspendLayout()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BtIcon, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -69,7 +95,7 @@ Partial Class DeskMenu
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(319, 25)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Search"
+        Me.Label2.Text = "Search the web"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'TextBox1
@@ -87,7 +113,7 @@ Partial Class DeskMenu
         'BtLabel
         '
         Me.BtLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.BtLabel.Location = New System.Drawing.Point(48, 651)
+        Me.BtLabel.Location = New System.Drawing.Point(48, 797)
         Me.BtLabel.Name = "BtLabel"
         Me.BtLabel.Size = New System.Drawing.Size(200, 30)
         Me.BtLabel.TabIndex = 7
@@ -99,9 +125,9 @@ Partial Class DeskMenu
         Me.Panel1.Controls.Add(Me.TimeLabel)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.ForeColor = System.Drawing.Color.Black
-        Me.Panel1.Location = New System.Drawing.Point(17, 146)
+        Me.Panel1.Location = New System.Drawing.Point(17, 419)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(359, 85)
+        Me.Panel1.Size = New System.Drawing.Size(361, 85)
         Me.Panel1.TabIndex = 9
         '
         'TimeLabel
@@ -112,7 +138,7 @@ Partial Class DeskMenu
         Me.TimeLabel.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.TimeLabel.Location = New System.Drawing.Point(146, 3)
         Me.TimeLabel.Name = "TimeLabel"
-        Me.TimeLabel.Size = New System.Drawing.Size(210, 79)
+        Me.TimeLabel.Size = New System.Drawing.Size(212, 79)
         Me.TimeLabel.TabIndex = 11
         Me.TimeLabel.Text = "Fetching today's date..."
         '
@@ -135,7 +161,7 @@ Partial Class DeskMenu
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(366, 25)
         Me.Label3.TabIndex = 10
-        Me.Label3.Text = "Info"
+        Me.Label3.Text = "My apps"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Panel3
@@ -144,7 +170,7 @@ Partial Class DeskMenu
         Me.Panel3.Controls.Add(Me.News)
         Me.Panel3.Controls.Add(Me.Panel4)
         Me.Panel3.ForeColor = System.Drawing.Color.Black
-        Me.Panel3.Location = New System.Drawing.Point(17, 242)
+        Me.Panel3.Location = New System.Drawing.Point(17, 515)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(361, 85)
         Me.Panel3.TabIndex = 12
@@ -157,7 +183,7 @@ Partial Class DeskMenu
         Me.News.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.News.Location = New System.Drawing.Point(146, 3)
         Me.News.Name = "News"
-        Me.News.Size = New System.Drawing.Size(213, 79)
+        Me.News.Size = New System.Drawing.Size(212, 79)
         Me.News.TabIndex = 11
         Me.News.Text = "Fetching news..."
         '
@@ -171,6 +197,191 @@ Partial Class DeskMenu
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(140, 85)
         Me.Panel4.TabIndex = 10
+        '
+        'Label4
+        '
+        Me.Label4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label4.Location = New System.Drawing.Point(12, 382)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(366, 25)
+        Me.Label4.TabIndex = 13
+        Me.Label4.Text = "Info"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel6
+        '
+        Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(99, Byte), Integer), CType(CType(177, Byte), Integer))
+        Me.Panel6.Controls.Add(Me.Label5)
+        Me.Panel6.Controls.Add(Me.PictureBox6)
+        Me.Panel6.Location = New System.Drawing.Point(136, 141)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(110, 110)
+        Me.Panel6.TabIndex = 12
+        '
+        'Label5
+        '
+        Me.Label5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Label5.Location = New System.Drawing.Point(3, 82)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(104, 25)
+        Me.Label5.TabIndex = 14
+        Me.Label5.Text = "Notes"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(99, Byte), Integer), CType(CType(177, Byte), Integer))
+        Me.Panel5.Controls.Add(Me.PictureBox4)
+        Me.Panel5.Controls.Add(Me.Label6)
+        Me.Panel5.Location = New System.Drawing.Point(15, 141)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(110, 110)
+        Me.Panel5.TabIndex = 15
+        '
+        'Label6
+        '
+        Me.Label6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Label6.Location = New System.Drawing.Point(3, 82)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(104, 25)
+        Me.Label6.TabIndex = 14
+        Me.Label6.Text = "Browser"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel7
+        '
+        Me.Panel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(99, Byte), Integer), CType(CType(177, Byte), Integer))
+        Me.Panel7.Controls.Add(Me.Label7)
+        Me.Panel7.Controls.Add(Me.PictureBox7)
+        Me.Panel7.Location = New System.Drawing.Point(257, 141)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(110, 110)
+        Me.Panel7.TabIndex = 15
+        '
+        'Label7
+        '
+        Me.Label7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Label7.Location = New System.Drawing.Point(3, 82)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(104, 25)
+        Me.Label7.TabIndex = 14
+        Me.Label7.Text = "Files"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel8
+        '
+        Me.Panel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(99, Byte), Integer), CType(CType(177, Byte), Integer))
+        Me.Panel8.Controls.Add(Me.Label8)
+        Me.Panel8.Controls.Add(Me.PictureBox8)
+        Me.Panel8.Location = New System.Drawing.Point(15, 262)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(110, 110)
+        Me.Panel8.TabIndex = 15
+        '
+        'Label8
+        '
+        Me.Label8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Label8.Location = New System.Drawing.Point(3, 82)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(104, 25)
+        Me.Label8.TabIndex = 14
+        Me.Label8.Text = "Settings"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel9
+        '
+        Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(99, Byte), Integer), CType(CType(177, Byte), Integer))
+        Me.Panel9.Controls.Add(Me.Label9)
+        Me.Panel9.Controls.Add(Me.PictureBox9)
+        Me.Panel9.Location = New System.Drawing.Point(136, 262)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(110, 110)
+        Me.Panel9.TabIndex = 16
+        '
+        'Label9
+        '
+        Me.Label9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label9.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Label9.Location = New System.Drawing.Point(3, 82)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(104, 25)
+        Me.Label9.TabIndex = 14
+        Me.Label9.Text = "Paint"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
+        Me.PictureBox9.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(104, 80)
+        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox9.TabIndex = 6
+        Me.PictureBox9.TabStop = False
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
+        Me.PictureBox8.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(104, 80)
+        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox8.TabIndex = 6
+        Me.PictureBox8.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(104, 80)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox7.TabIndex = 6
+        Me.PictureBox7.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
+        Me.PictureBox4.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(104, 80)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox4.TabIndex = 15
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
+        Me.PictureBox6.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(104, 80)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox6.TabIndex = 6
+        Me.PictureBox6.TabStop = False
         '
         'PictureBox3
         '
@@ -202,7 +413,7 @@ Partial Class DeskMenu
         '
         Me.BtIcon.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.BtIcon.Image = Global.NEXOS.My.Resources.Resources.NoBattery
-        Me.BtIcon.Location = New System.Drawing.Point(12, 651)
+        Me.BtIcon.Location = New System.Drawing.Point(12, 797)
         Me.BtIcon.Name = "BtIcon"
         Me.BtIcon.Size = New System.Drawing.Size(30, 30)
         Me.BtIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -213,7 +424,7 @@ Partial Class DeskMenu
         '
         Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(312, 651)
+        Me.PictureBox1.Location = New System.Drawing.Point(312, 797)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -224,7 +435,7 @@ Partial Class DeskMenu
         '
         Me.PictureBox5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(348, 651)
+        Me.PictureBox5.Location = New System.Drawing.Point(348, 797)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -236,7 +447,13 @@ Partial Class DeskMenu
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(390, 693)
+        Me.ClientSize = New System.Drawing.Size(390, 839)
+        Me.Controls.Add(Me.Panel9)
+        Me.Controls.Add(Me.Panel8)
+        Me.Controls.Add(Me.Panel7)
+        Me.Controls.Add(Me.Panel5)
+        Me.Controls.Add(Me.Panel6)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Panel1)
@@ -259,6 +476,16 @@ Partial Class DeskMenu
         Me.Panel2.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel7.ResumeLayout(False)
+        Me.Panel8.ResumeLayout(False)
+        Me.Panel9.ResumeLayout(False)
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BtIcon, System.ComponentModel.ISupportInitialize).EndInit()
@@ -285,4 +512,20 @@ Partial Class DeskMenu
     Friend WithEvents News As Label
     Friend WithEvents Panel4 As Panel
     Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents Label5 As Label
+    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents Panel5 As Panel
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Panel7 As Panel
+    Friend WithEvents Label7 As Label
+    Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents Panel8 As Panel
+    Friend WithEvents Label8 As Label
+    Friend WithEvents PictureBox8 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents Panel9 As Panel
+    Friend WithEvents Label9 As Label
+    Friend WithEvents PictureBox9 As PictureBox
 End Class

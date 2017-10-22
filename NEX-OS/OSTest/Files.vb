@@ -85,6 +85,6 @@ Public Class Files
     End Sub
 
     Private Sub Me_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
-        Form2.ProcessKeys(e)
+        Desktop.ProcessKeys(e)
     End Sub
 End Class
