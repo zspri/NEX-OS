@@ -1,8 +1,5 @@
 ﻿Imports System.IO
-Imports System.Text
 Imports System.Net
-Imports System.Management
-Imports System.Runtime.InteropServices
 Imports System.Net.NetworkInformation
 
 Public Class DeskMenu
@@ -26,9 +23,9 @@ Public Class DeskMenu
     End Sub
 
     Private Sub DeskMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.Height = My.Computer.Screen.Bounds.Size.Height - 35
+        Me.Height = My.Computer.Screen.Bounds.Size.Height
         Me.Width = 0
-        Me.Location = New Point(64, 35)
+        Me.Location = New Point(0, 0)
         Me.Show()
         Application.DoEvents()
         TimeLabel.Text = "Today is " + MonthName(Month(DateTime.Now)) + " " + DateTime.Now.ToString("dd") + "."

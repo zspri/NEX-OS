@@ -1,8 +1,5 @@
 ﻿Imports System.IO
 Imports System.Net
-Imports System.Management
-Imports System.Runtime.InteropServices
-Imports System.Net.NetworkInformation
 
 Public Class Desktop
     Private Function SpamRefresh(times As Integer)
@@ -16,10 +13,8 @@ Public Class Desktop
         If e.KeyCode = Keys.F3 And My.Computer.Keyboard.ShiftKeyDown Then
             If My.Settings.Admin Then
                 My.Settings.Admin = False
-                AdminIcon.Hide()
             Else
                 My.Settings.Admin = True
-                AdminIcon.Show()
             End If
         ElseIf e.KeyCode = Keys.OemMinus And My.Computer.Keyboard.AltKeyDown And My.Computer.Keyboard.CtrlKeyDown Then
             FatalError.Show()
@@ -29,11 +24,10 @@ Public Class Desktop
         Return 0
     End Function
     Private Sub Desktop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        AdminIcon.Hide()
-        Timer1.Interval = 1
+        DeskTime.Text = Date.Now.ToString("HH:mm")
+        DeskDate.Text = MonthName(Month(DateTime.Now)) & Date.Now.ToString(" dd, yyyy")
+        Timer1.Interval = 100
         Timer1.Enabled = True
-        Timer1.Interval = 1000
-        VersionLabel.Text = "NEX OS Public Build " + My.Application.Info.Version.ToString
         Try
             Dim Client As WebClient = New WebClient()
             Dim Reader As StreamReader = New StreamReader(Client.OpenRead("https://httpbin.org/get"))
@@ -43,12 +37,8 @@ Public Class Desktop
         End Try
     End Sub
 
-    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs)
         Settings.Show()
-    End Sub
-
-    Private Sub PictureBox4_Click(sender As Object, e As EventArgs)
-        Internet.Show()
     End Sub
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
@@ -74,15 +64,7 @@ Public Class Desktop
         DeskMenu.Show()
     End Sub
 
-    Private Sub PictureBox6_Click(sender As Object, e As EventArgs)
-        Notes.Show()
-    End Sub
-
-    Private Sub PictureBox7_Click(sender As Object, e As EventArgs)
-        Files.Show()
-    End Sub
-
-    Private Sub AdminIcon_Click(sender As Object, e As EventArgs) Handles AdminIcon.Click
+    Private Sub AdminIcon_Click(sender As Object, e As EventArgs)
         ModalBox.ShowModal("Administrator", "You're using the administrator account. To revert back to the normal user, press Shift+F3.", YesNoModal:=False)
         ModalBox.Close()
     End Sub
@@ -92,15 +74,40 @@ Public Class Desktop
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Dim Time As String
-        If Date.Now.Hour < 12 Then
-            Time = Date.Now.ToString("HH:mm") & " AM"
-        ElseIf Date.Today.Hour = 12 Then
-            Time = Date.Now.ToString("12:mm") & " PM"
-        Else
-            Dim format = Date.Now.Hour - 12
-            Time = format.ToString & Date.Now.ToString(":mm") & " PM"
+        DeskTime.Text = Date.Now.ToString("HH:mm")
+        DeskDate.Text = MonthName(Month(DateTime.Now)) & Date.Now.ToString(" dd, yyyy")
+    End Sub
+
+    Private Sub GSearchBar_KeyDown(sender As Object, e As KeyEventArgs) Handles GSearchBar.KeyDown
+        If e.KeyCode = Keys.Enter Or e.KeyCode = Keys.Return Then
+            Internet.Show()
+            Internet.WebBrowser1.Navigate("https://google.com/search?q=" + GSearchBar.Text)
+            GSearchBar.Text = ""
+            Try
+                DeskMenu.Close()
+            Catch ex As Exception
+                Debug.Print(ex.ToString)
+            End Try
         End If
-        TimeLabel.Text = MonthName(Month(DateTime.Now)) & Date.Now.ToString(" dd, yyyy ") & Time
+    End Sub
+
+    Private Sub SettingsIcon_Click(sender As Object, e As EventArgs) Handles SettingsIcon.Click
+        Settings.Show()
+    End Sub
+
+    Private Sub PaintIcon_Click(sender As Object, e As EventArgs) Handles PaintIcon.Click
+        My.Forms.Paint.Show()
+    End Sub
+
+    Private Sub FilesIcon_Click(sender As Object, e As EventArgs) Handles FilesIcon.Click
+        Files.Show()
+    End Sub
+
+    Private Sub NotesIcon_Click(sender As Object, e As EventArgs) Handles NotesIcon.Click
+        Notes.Show()
+    End Sub
+
+    Private Sub BrowserIcon_Click(sender As Object, e As EventArgs) Handles BrowserIcon.Click
+        Internet.Show()
     End Sub
 End Class
