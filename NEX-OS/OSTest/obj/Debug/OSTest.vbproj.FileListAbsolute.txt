@@ -39,9 +39,10 @@ C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\bin\Debug\ManagedWifi.dll
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.StartSplash.resources
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.Desktop.resources
-C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.LoginForm.resources
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.InfoDisplay.resources
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\bin\Debug\Newtonsoft.Json.dll
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\bin\Debug\Newtonsoft.Json.xml
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\OSTest.vbprojResolveAssemblyReference.cache
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.Paint.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.PowerOff.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\OSTest.vbproj.CoreCompileInputs.cache

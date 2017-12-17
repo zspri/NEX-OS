@@ -42,31 +42,11 @@ Public Class Desktop
     End Sub
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
-        Debug.Print("Modal started")
-        Dim modalResult = ModalBox.ShowModal("Shutdown", "Are you sure that you want to close NEX OS?")
-        ModalBox.Close()
-        Debug.Print("Modal finished // " & modalResult.ToString)
-        If modalResult = 1 Then
-            Try
-                DeskMenu.Close()
-            Catch ex As Exception
-                Debug.Print(ex.ToString)
-            End Try
-            Me.Close()
-        End If
-    End Sub
-
-    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
-        LoginForm.Show()
+        Application.Exit()
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         DeskMenu.Show()
-    End Sub
-
-    Private Sub AdminIcon_Click(sender As Object, e As EventArgs)
-        ModalBox.ShowModal("Administrator", "You're using the administrator account. To revert back to the normal user, press Shift+F3.", YesNoModal:=False)
-        ModalBox.Close()
     End Sub
 
     Private Sub Me_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
@@ -91,7 +71,7 @@ Public Class Desktop
         End If
     End Sub
 
-    Private Sub SettingsIcon_Click(sender As Object, e As EventArgs) Handles SettingsIcon.Click
+    Private Sub SettingsIcon_Click(sender As Object, e As EventArgs) Handles SettingsButton.Click
         Settings.Show()
     End Sub
 

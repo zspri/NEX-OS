@@ -75,6 +75,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -121,10 +122,10 @@
     <Compile Include="InfoDisplay.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.vb">
-      <DependentUpon>LoginForm.vb</DependentUpon>
+    <Compile Include="NewLogin.Designer.vb">
+      <DependentUpon>NewLogin.vb</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm.vb">
+    <Compile Include="NewLogin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Paint.Designer.vb">
@@ -223,8 +224,8 @@
     <EmbeddedResource Include="InfoDisplay.resx">
       <DependentUpon>InfoDisplay.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
-      <DependentUpon>LoginForm.vb</DependentUpon>
+    <EmbeddedResource Include="NewLogin.resx">
+      <DependentUpon>NewLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Paint.resx">
       <DependentUpon>Paint.vb</DependentUpon>
