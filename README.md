@@ -1,16 +1,14 @@
 <h1 align="center">NEX OS 2</h1>
 
 <p align="center">
-    A simple OS made in Visual Basic with a modern UI.
-    <br>
-    [![GitHub stars](https://img.shields.io/github/stars/nanomotion/nex-os.svg?style=social&label=Stars)]()
-    [![GitHub watchers](https://img.shields.io/github/watchers/nanomotion/nex-os.svg?style=social&label=Watch)]()
-    [![GitHub followers](https://img.shields.io/github/followers/nanomotion.svg?style=social&label=Follow)]()
-    [![GitHub (pre-)release](https://img.shields.io/github/release/nanomotion/nex-os/all.svg?style=social)]()
-</p>
-
-<p align="center">
     <img src="https://raw.githubusercontent.com/Nanomotion/NEX-OS/master/nexos.png" width="40%">
+    <br>
+    A simple OS made in Visual Basic with a modern UI.
+    <br><br>
+    <img src="https://img.shields.io/github/stars/nanomotion/nex-os.svg?style=social&label=Stars)">
+    <img src="https://img.shields.io/github/followers/nanomotion.svg?style=social&label=Follow)">
+    <br>
+    <img src="https://img.shields.io/github/release/nanomotion/nex-os/all.svg?style=social)">
 </p>
 
 ## Installation
@@ -19,9 +17,9 @@
  - Download the [ManagedWifi](https://github.com/Nanomotion/NEX-OS/blob/master/NEX-OS/OSTest/bin/Debug/ManagedWifi.dll) and [Newtonsoft.JSON](https://github.com/Nanomotion/NEX-OS/blob/master/NEX-OS/OSTest/bin/Debug/Newtonsoft.Json.dll) DLLs to the same folder that you have NEX OS in.
  - NEX OS will guide you through first-time setup.
 
-<img src="https://raw.githubusercontent.com/Nanomotion/NEX-OS/master/nexos2.png" width="40%">
+<img src="https://raw.githubusercontent.com/Nanomotion/NEX-OS/master/nexos2.PNG" width="60%">
 
-<img src="https://raw.githubusercontent.com/Nanomotion/NEX-OS/master/nexos3.png" width="40%">
+<img src="https://raw.githubusercontent.com/Nanomotion/NEX-OS/master/nexos3.PNG" width="60%">
 
 ## Customization
 
@@ -69,5 +67,7 @@ Check that the name and country code are correct. If you live in a small communi
 
  - Check your internet connection.
  - If you're connected to the internet, try going to http://weather.com in the Internet Browser and see if it works from there.
+
+[![GitHub followers](https://img.shields.io/github/followers/nanomotion.svg?style=social&label=Follow)]()
 
 *Icons provided by [Icons8](https://icons8.com)*
