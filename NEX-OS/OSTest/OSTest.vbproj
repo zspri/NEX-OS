@@ -13,20 +13,24 @@
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>https://github.com/nanomotion/nex-os/</InstallUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -64,6 +68,24 @@
   <PropertyGroup>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>NEXOSKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>EB85CB8E57AD574C914A495B777C9F9914F42AB7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>OSTest_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="ManagedWifi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\managedwifi.1.1.0\lib\net20\ManagedWifi.dll</HintPath>
@@ -86,8 +108,6 @@
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
-    <Import Include="System.Collections" />
-    <Import Include="System.Collections.Generic" />
     <Import Include="System.Data" />
     <Import Include="System.Drawing" />
     <Import Include="System.Diagnostics" />
@@ -97,11 +117,29 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlarmSet.Designer.vb">
+      <DependentUpon>AlarmSet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AlarmSet.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Clock.Designer.vb">
+      <DependentUpon>Clock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clock.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DeskMenu.Designer.vb">
       <DependentUpon>DeskMenu.vb</DependentUpon>
     </Compile>
     <Compile Include="DeskMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="devtools.Designer.vb">
+      <DependentUpon>devtools.vb</DependentUpon>
+    </Compile>
+    <Compile Include="devtools.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FatalError.Designer.vb">
@@ -116,16 +154,22 @@
     <Compile Include="Files.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FirstRun.Designer.vb">
+      <DependentUpon>FirstRun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FirstRun.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="InfoDisplay.Designer.vb">
       <DependentUpon>InfoDisplay.vb</DependentUpon>
     </Compile>
     <Compile Include="InfoDisplay.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewLogin.Designer.vb">
-      <DependentUpon>NewLogin.vb</DependentUpon>
+    <Compile Include="LocationSet.Designer.vb">
+      <DependentUpon>LocationSet.vb</DependentUpon>
     </Compile>
-    <Compile Include="NewLogin.vb">
+    <Compile Include="LocationSet.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Paint.Designer.vb">
@@ -210,10 +254,25 @@
     <Compile Include="ModalBox.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Weather.Designer.vb">
+      <DependentUpon>Weather.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Weather.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AlarmSet.resx">
+      <DependentUpon>AlarmSet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clock.resx">
+      <DependentUpon>Clock.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DeskMenu.resx">
       <DependentUpon>DeskMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="devtools.resx">
+      <DependentUpon>devtools.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FatalError.resx">
       <DependentUpon>FatalError.vb</DependentUpon>
@@ -221,11 +280,14 @@
     <EmbeddedResource Include="Files.resx">
       <DependentUpon>Files.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FirstRun.resx">
+      <DependentUpon>FirstRun.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InfoDisplay.resx">
       <DependentUpon>InfoDisplay.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewLogin.resx">
-      <DependentUpon>NewLogin.vb</DependentUpon>
+    <EmbeddedResource Include="LocationSet.resx">
+      <DependentUpon>LocationSet.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Paint.resx">
       <DependentUpon>Paint.vb</DependentUpon>
@@ -266,6 +328,9 @@
     <EmbeddedResource Include="ModalBox.resx">
       <DependentUpon>ModalBox.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Weather.resx">
+      <DependentUpon>Weather.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\app.manifest">
@@ -283,6 +348,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="NEXOSKey.pfx" />
+    <None Include="OSTest_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Resources\icons8-Attention-96.png" />
   </ItemGroup>
@@ -324,6 +391,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-Remove Battery-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-no-connection-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-signal-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarm.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

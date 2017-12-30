@@ -14,8 +14,11 @@
     <Setting Name="UseNotesDarkTheme" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="Password" Type="System.String" Scope="User">
-      <Value Profile="(Default)">1234</Value>
+    <Setting Name="Location" Type="System.String" Scope="User">
+      <Value Profile="(Default)">New York</Value>
+    </Setting>
+    <Setting Name="FirstRun" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
     </Setting>
   </Settings>
 </SettingsFile>

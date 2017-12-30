@@ -44,5 +44,42 @@ C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\bin\Debug\Newtonsoft.Json.xml
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\OSTest.vbprojResolveAssemblyReference.cache
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.Paint.resources
-C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.PowerOff.resources
 C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\OSTest.vbproj.CoreCompileInputs.cache
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.LocationSet.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\OSTest\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.FirstRun.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\bin\Debug\NEX OS.exe.config
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\bin\Debug\NEX OS.exe
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\bin\Debug\NEX OS.pdb
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\bin\Debug\NEX OS.xml
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\bin\Debug\ManagedWifi.dll
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\bin\Debug\Newtonsoft.Json.xml
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.DeskMenu.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.FatalError.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.Files.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.FirstRun.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.InfoDisplay.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.LocationSet.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.Paint.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.StartSplash.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.Desktop.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.GetHelp.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.Internet.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.MenuSettings.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.Resources.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.NoInternet.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.Notes.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.NotesSettings.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.Settings.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.ModalBox.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\OSTest.vbproj.GenerateResource.Cache
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\OSTest.vbproj.CoreCompileInputs.cache
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEX OS.exe
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEX OS.xml
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEX OS.pdb
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.Weather.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.Clock.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.AlarmSet.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEXOS.devtools.resources
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\OSTest.vbprojResolveAssemblyReference.cache
+C:\Users\zspri\Documents\Visual Studio 2017\Projects\NEX-OS\NEX-OS\OSTest\obj\Debug\NEX OS.exe.manifest

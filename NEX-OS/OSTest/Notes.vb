@@ -14,6 +14,7 @@ Public Class Notes
             Try
                 TextBox1.Text = My.Computer.FileSystem.ReadAllText(FilePath)
             Catch ex As Exception
+                NEXAppLog.Log("app.notes", ex.ToString)
                 ModalBox.ShowModal("An Error Occurred", "An unexpected error occurred while reading this file." & vbCrLf & vbCrLf & ex.ToString, YesNoModal:=False)
                 ModalBox.Close()
                 Me.Close()
@@ -53,6 +54,7 @@ Public Class Notes
                 Try
                     My.Computer.FileSystem.WriteAllText(fpath, TextBox1.Text, False)
                 Catch ex As Exception
+                    NEXAppLog.Log("app.notes", ex.ToString)
                     ModalBox.ShowModal("An Error Occurred", "An unexpected error occurred while writing to this file." & vbCrLf & vbCrLf & ex.ToString, YesNoModal:=False)
                     ModalBox.Close()
                     Me.Close()

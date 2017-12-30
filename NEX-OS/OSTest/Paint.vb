@@ -53,6 +53,6 @@
         PictureBox1.Image = Drawbitmap
         Drawgraphics.Clear(Color.White)
         myBrushWidth = 4
-
+        NEXAppLog.Log("app.paint", "App loaded")
     End Sub
 End Class

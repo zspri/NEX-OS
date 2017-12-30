@@ -22,6 +22,7 @@ Partial Class Internet
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Internet))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -30,9 +31,13 @@ Partial Class Internet
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
+        Me.NewProgressBar = New System.Windows.Forms.Panel()
+        Me.ProgressBg = New System.Windows.Forms.Panel()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.NewProgressBar.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -58,7 +63,7 @@ Partial Class Internet
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(890, 47)
         Me.Label2.TabIndex = 7
-        Me.Label2.Text = "Internet"
+        Me.Label2.Text = "Web Browser"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label1
@@ -99,9 +104,13 @@ Partial Class Internet
         '
         Me.TextBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox1.Location = New System.Drawing.Point(90, 53)
+        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 12.4!)
+        Me.TextBox1.ForeColor = System.Drawing.Color.White
+        Me.TextBox1.Location = New System.Drawing.Point(90, 54)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(847, 31)
+        Me.TextBox1.Size = New System.Drawing.Size(847, 28)
         Me.TextBox1.TabIndex = 2
         '
         'WebBrowser1
@@ -109,22 +118,47 @@ Partial Class Internet
         Me.WebBrowser1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.WebBrowser1.Location = New System.Drawing.Point(0, 96)
+        Me.WebBrowser1.Location = New System.Drawing.Point(0, 99)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
         Me.WebBrowser1.ScriptErrorsSuppressed = True
-        Me.WebBrowser1.Size = New System.Drawing.Size(949, 573)
+        Me.WebBrowser1.Size = New System.Drawing.Size(949, 570)
         Me.WebBrowser1.TabIndex = 2
+        '
+        'NewProgressBar
+        '
+        Me.NewProgressBar.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.NewProgressBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(38, Byte), Integer))
+        Me.NewProgressBar.Controls.Add(Me.ProgressBg)
+        Me.NewProgressBar.Location = New System.Drawing.Point(0, 92)
+        Me.NewProgressBar.Name = "NewProgressBar"
+        Me.NewProgressBar.Size = New System.Drawing.Size(949, 13)
+        Me.NewProgressBar.TabIndex = 4
+        '
+        'ProgressBg
+        '
+        Me.ProgressBg.BackColor = System.Drawing.Color.DodgerBlue
+        Me.ProgressBg.Location = New System.Drawing.Point(-1, -1)
+        Me.ProgressBg.Name = "ProgressBg"
+        Me.ProgressBg.Size = New System.Drawing.Size(200, 20)
+        Me.ProgressBg.TabIndex = 0
+        '
+        'Timer1
+        '
+        Me.Timer1.Interval = 1
         '
         'Internet
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(947, 669)
+        Me.Controls.Add(Me.NewProgressBar)
         Me.Controls.Add(Me.WebBrowser1)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ForeColor = System.Drawing.Color.White
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Internet"
@@ -134,6 +168,7 @@ Partial Class Internet
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.NewProgressBar.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -145,4 +180,7 @@ Partial Class Internet
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents NewProgressBar As Panel
+    Friend WithEvents ProgressBg As Panel
+    Friend WithEvents Timer1 As Timer
 End Class

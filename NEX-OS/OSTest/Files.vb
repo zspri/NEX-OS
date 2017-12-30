@@ -2,26 +2,28 @@
 
 Public Class Files
 
-    Dim DirFiles As New List(Of Label)
+    Dim DirFiles As New Collections.Generic.List(Of Label)
 
     Public Function RetrieveFilesIn(DirPath As String)
+        NEXAppLog.Log("app.files", "Getting files in " & DirPath)
         Me.DirPath.Text = DirPath
         TextBox1.Text = DirPath
         Dim labelX = 205
         Dim labelY = 115
         Debug.Print("Deleting old labels")
+        NEXAppLog.Log("app.files", "Removing old labels")
         Dim lb As Label
         For Each lb In DirFiles
-            Debug.Print("Iter: " & lb.Text)
+            NEXAppLog.Log("app.files", "Iter label: " + lb.ToString)
             RemoveHandler lb.Click, AddressOf Me.Files_Click
             lb.Dispose()
         Next
-        Debug.Print("Getting files in " & Me.DirPath.Text)
+        NEXAppLog.Log("app.files", "Actually retreiving file names now")
         Dim files As String() = Directory.GetFiles(DirPath)
         Debug.Print(files.ToString)
         Dim fname As String
         For Each fname In files
-            Debug.Print("Iter: " & fname)
+            NEXAppLog.Log("app.files", "Iter file: " & fname.ToString)
             Dim label As Label = New Label()
             label.Size = New Size(Me.Width - labelX, 20)
             label.Location = New Point(labelX, labelY)
@@ -56,6 +58,7 @@ Public Class Files
     End Sub
 
     Private Sub Files_Click(sender As Object, e As EventArgs)
+        NEXAppLog.Log("app.files", "Opening file in notes")
         Notes.OpenNote(DirPath.Text & "\" & sender.Text)
     End Sub
 
@@ -69,10 +72,13 @@ Public Class Files
             Try
                 RetrieveFilesIn(TextBox1.Text)
             Catch ex As DirectoryNotFoundException
+                NEXAppLog.Log("app.files", ex.ToString)
+                NEXAppLog.Log("app.files", "it wasn't a directory")
                 ModalBox.ShowModal("Directory Not Found", DirPath.Text & " is not a directory.", YesNoModal:=False)
                 ModalBox.Close()
                 RetrieveFilesIn(My.Computer.FileSystem.SpecialDirectories.MyDocuments)
             Catch ex As Exception
+                NEXAppLog.Log("app.files", ex.ToString)
                 FatalError.Show()
                 FatalError.Stacktrace.Text = ex.ToString
                 Me.Close()

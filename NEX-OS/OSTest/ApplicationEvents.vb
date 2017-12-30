@@ -6,5 +6,20 @@
     ' StartupNextInstance: Raised when launching a single-instance application and the application is already active. 
     ' NetworkAvailabilityChanged: Raised when the network connection is connected or disconnected.
     Partial Friend Class MyApplication
+
+        Private Sub MyApplication_UnhandledException(ByVal sender As Object, ByVal e As Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs) Handles Me.UnhandledException
+            Try
+                My.Forms.Desktop.Close()
+                My.Forms.DeskMenu.Close()
+            Catch ex As Exception
+                Console.WriteLine(ex.ToString)
+            End Try
+            My.Forms.FatalError.Show()
+            My.Forms.FatalError.Stacktrace.Text = e.Exception.ToString
+            e.ExitApplication = False
+        End Sub
     End Class
+
 End Namespace
+
+

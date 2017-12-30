@@ -27,6 +27,11 @@ NEX OS
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:NEXOS.My.Resources.Resources.alarm">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
 <member name="P:NEXOS.My.Resources.Resources.BatteryCharging">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -58,6 +63,16 @@ NEX OS
 </summary>
 </member>
 <member name="P:NEXOS.My.Resources.Resources.error_2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NEXOS.My.Resources.Resources.icons8_no_connection_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NEXOS.My.Resources.Resources.icons8_signal_32">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

@@ -28,6 +28,7 @@ Public Class NoInternet
                 "IP address: " & myIP.ToString & vbCrLf &
                 "Machine name: " & PCName
                 FirstInformationExpand = False
+                NEXAppLog.Log("desk.nointernet", MoreInfo.Text)
             End If
             MoreInfo.Show()
                 ShowMore.Text = "Show less ➜"

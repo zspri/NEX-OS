@@ -6,11 +6,11 @@
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        PowerOff.Show()
+        Desktop.Show()
         Me.BringToFront()
         Application.DoEvents()
         Me.Update()
         Me.Cursor.Show()
-        Me.Close()
+        Timer1.Enabled = False
     End Sub
 End Class
