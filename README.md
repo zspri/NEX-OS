@@ -1,6 +1,8 @@
-# NEX OS 2
+<h1 align="center">NEX OS 2</h1>
 
-A simple OS with a modern UI.
+<p align="center">A simple OS with a modern UI.</p>
+
+<img src="https://raw.githubusercontent.com/Nanomotion/NEX-OS/master/nexos.png" align="center" width="50%">
 
 Recently redesigned to give a more comfortable appearance, along with new apps, and a better internet browser.
 
