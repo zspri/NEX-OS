@@ -5,10 +5,9 @@
     <br>
     A simple OS made in Visual Basic with a modern UI.
     <br><br>
-    <img src="https://img.shields.io/github/stars/nanomotion/nex-os.svg?style=social&label=Stars)">
-    <img src="https://img.shields.io/github/followers/nanomotion.svg?style=social&label=Follow)">
-    <br>
-    <img src="https://img.shields.io/github/release/nanomotion/nex-os/all.svg?style=social)">
+    <img src="https://img.shields.io/github/stars/nanomotion/nex-os.svg?style=social&label=Stars">
+    <img src="https://img.shields.io/github/followers/nanomotion.svg?style=social&label=Follow">
+    <img src="https://img.shields.io/github/release/nanomotion/nex-os/all.svg?style=social">
 </p>
 
 ## Installation
